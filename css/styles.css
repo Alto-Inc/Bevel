@@ -1,0 +1,173 @@
+/* Main Styling for Search Engine Frontend */
+
+/* Hero Section Styling */
+.hero-section {
+    padding: 6rem 0;
+    background: var(--bs-dark);
+    position: relative;
+}
+
+/* Custom styling for search input */
+.search-input-group {
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.search-input-group:focus-within {
+    box-shadow: 0 5px 20px rgba(33, 150, 243, 0.3);
+}
+
+.search-input-group .form-control {
+    border-radius: 30px 0 0 30px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.search-input-group .btn {
+    border-radius: 0 30px 30px 0;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Quick links styling */
+.quick-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.quick-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--bs-light);
+    transition: all 0.2s ease;
+}
+
+.quick-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--bs-light);
+}
+
+/* Search Results Section */
+.search-results-container {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: var(--bs-dark-bg-subtle);
+    margin-bottom: 2rem;
+}
+
+/* Feature icons */
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--bs-info);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .search-input-group .form-control, 
+    .search-input-group .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+    
+    .quick-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Custom Styling for Google CSE */
+.gsc-control-cse {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* Make the search input text more readable */
+.gsc-input-box {
+    background-color: var(--bs-dark-bg-subtle) !important;
+}
+
+input.gsc-input {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+.gsc-input-box .gsc-input-field {
+    background-color: #ffffff !important;
+}
+
+table.gsc-search-box td.gsc-input {
+    background-color: #ffffff !important;
+}
+
+.gsc-input::placeholder {
+    color: #666666 !important;
+}
+
+.gsc-input:focus {
+    color: #000000 !important;
+}
+
+/* Search button styling */
+.gsc-search-button-v2 {
+    background-color: var(--bs-secondary) !important;
+    border-color: var(--bs-secondary) !important;
+}
+
+.gsc-search-button-v2:hover {
+    background-color: var(--bs-secondary-dark) !important;
+}
+
+.gsc-result-info {
+    color: var(--bs-body-color) !important;
+}
+
+.gs-title, .gs-title b {
+    color: var(--bs-info) !important;
+}
+
+.gs-snippet {
+    color: var(--bs-body-color) !important;
+}
+
+.gsc-url-top {
+    color: var(--bs-success) !important;
+}
+
+.gsc-cursor-page {
+    color: var(--bs-body-color) !important;
+}
+
+.gsc-cursor-current-page {
+    color: var(--bs-info) !important;
+}
+
+/* Animation for loading */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease forwards;
+}
